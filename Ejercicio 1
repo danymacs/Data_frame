@@ -1,0 +1,51 @@
+objeto1 <- 56
+objeto2 <-"56"v #Caracter:Simbólico
+
+#Vectores dataframes
+#<-c("Diego", #Maria Fernanda", "Daniel", "Manuel")   correrlo con command enter
+
+Edad_Ch <- c("24", "25", "24", "41") correrlo con command enter
+
+Edad_Nu <- c(24, 25, 24,41) correrlo con command enter
+
+Tabla<- data.frame(Nombres,Edad_CH, Edad_nu) correr con command enter 
+
+head(Tabla) correr con command enter
+
+
+install.packages("vroom") instalacionde paquetes- correr con command enter
+
+
+library ("vroom") correr con command enter
+
+Genes<- vroom(file="copiar  link direccion del archivo en bs tarea") correrlo
+
+View(Genes)
+
+install.packages("dplyr") correr con command enter
+
+library("dplyr")
+
+#dplyr sirve para facilitar el manejo de los datos
+
+Filtro 1 <-Genes %>% #Ctr/Cmd+Shift+m
+#significa: crearemos un objeto llamado filtro1, a partir del objeto "genes" al cual le vamos a hacer lo siguient e
+
+filter("gen"=="PIF1")
+
+Filtro1
+
+seleccionar <- Genes %>% 
+Select(1,2,3,4) correrlo
+
+Seleccionar 
+
+"Multiples funciones"
+
+MF<- genes%>%
+select(-2,-3,-4)%>% 
+
+filter(gen=="B-actina")%>% 
+mutate(promedio=(T1+T2+T3/3)#generar nuevas columnas y se puedan utilizar fórmulas correrlo
+
+MF
